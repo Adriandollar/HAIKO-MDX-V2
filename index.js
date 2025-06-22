@@ -68,7 +68,7 @@ const {
   //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
 if(!config.SESSION_ID) return console.log('HAIKO~MDX~JEhD0I4K#8ZgE1UVIPTpp05-dRsYov2cHxRZHL1xUCGDnloSyT2c')
-const sessdata = config.SESSION_ID.replace("HAIKO~MDX~", 'HAIKO~MDX~JEhD0I4K#8ZgE1UVIPTpp05-dRsYov2cHxRZHL1xUCGDnloSyT2c');
+const sessdata = config.SESSION_ID.replace("HAIKO~MDX~JEhD0I4K#8ZgE1UVIPTpp05-dRsYov2cHxRZHL1xUCGDnloSyT2c", '');
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
